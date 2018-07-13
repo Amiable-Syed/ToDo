@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>ToDo List</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+    
+</head>
+
+<body>
+
+    <div class="container">
+        <!-- nav bar -->
+        <div class="nav">
+            <div class="logodiv">
+                <img src="{{ url_for('static', filename='images/logo.png') }}">
+                <h2>ToDo List&nbsp;</h2>
+            </div>
+
+            <!-- right most links in top navbar -->
+            <div class="right toplinks">
+                <a class="active" href="/home">Home</a>
+                <a href="/about">About us</a>
+                <a href="/contact">Contact</a>
+                <a href="/login">Log in</a>
+            </div>
+
+        </div>
+         <hr>
+
+        <div class="card" style="float:left; margin-left:15%">
+            
+            <div >
+            <img src="{{ url_for('static', filename='images/isb.jpg') }}" alt="Avatar" style="width:100%">
+            <div class="container">
+            <h4><b>OFFICE: Islamabad</b></h4> 
+                <ul>
+                        <li>todo.Isb@todo.com</li>
+                        <li>(+92) 051 9876544</li>
+                    </ul>
+
+                <br>
+            </div>
+            </div>
+        </div>
+
+        </div>
+
+        <div class="card" style="float:right; margin-right:30%">
+            
+            <div >
+            <img src="{{ url_for('static', filename='images/Delhi.jpg') }}" alt="Avatar" style="width:100% ; height:8%">
+            <div class="container">
+                <h4><b>OFFICE: Delhi</b></h4> 
+                <ul>
+                        <li>todo.Delhi@todo.com</li>
+                        <li>(+91) 6573493</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        </div>
+</body>
+
+</html>
