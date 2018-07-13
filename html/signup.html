@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+	<html>
+		<head>
+			<meta charset="UTF-8">
+			
+			<title>ToDo App</title>
+			<!-- <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}"> -->
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+ 		   
+ 		    <link rel="stylesheet" type="text/css" href="../css/styles.css">
+    		
+		</head>
+
+	<body>
+		<div class="container">
+        <!-- nav bar -->
+        <div class="nav">
+            <div class="logodiv">
+                <img src="../images/logo.png">
+                <h2>ToDo List&nbsp;</h2>
+            </div>
+
+            <!-- right most links in top navbar -->
+            <div class="right toplinks">
+                <a class="active" href="index.html">Home</a>
+                <a href="Aboutus.html">About us</a>
+                <a href="contactus.html">Contact</a>
+                <a href="login.html">Log in</a>
+            </div>
+             
+        </div>
+		<hr>
+
+
+
+    </div>
+		<div align="center" class="box">
+			<img src="../images/signup.png" width=15% height=15% align="center">
+
+
+			<form method='POST' action="">
+			<input class="text-field" type="text" name="email" placeholder="Email ID"><br>
+  			<input class="text-field" type="text" name="paswd" placeholder="Password"><br>
+			<br>
+			<button class="btn-fancy" type="button">Register</button>  
+			<p >Already have any account? Log in</p>
+			<button class="btn-fancy" type="button" onclick="location.href='login.html'">Log in</button>  
+		</form>
+
+		</div>
+	
+	</body>
+
+	</html>
+ 

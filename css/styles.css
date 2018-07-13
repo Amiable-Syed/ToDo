@@ -1,0 +1,185 @@
+body {
+
+    margin: 0;
+
+    font-family: 'Apple Chancery', cursive;
+    background-color: #ffab02;
+}
+
+h1{
+
+    font-family: Apple Chancery; !important
+    font-size: 30px;
+    letter-spacing: -1px;
+    color: #999;
+    text-align: center;
+    margin-top: 40px;
+}
+
+input[type=text] {
+    width: 60%;
+    padding: 12px 15px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    margin-top: 20px;
+}
+.button {
+    background-color: rgb(11, 126, 126); /* Green */
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 40px;
+    background-color: white;
+    color: black;
+    border: 2px solid #4CAF50;
+}
+.button:hover {
+    background-color: #4CAF50; /* Green */
+    color: white;
+}
+p{
+
+    max-width: 250px;
+    overflow: hidden;
+    color: #4BAF50;
+}
+.container {
+
+    width: 100%;
+    padding-right: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.nav {
+        background-color: #fff;
+    width: auto;
+    height: 70px;
+    overflow: hidden;
+}
+
+.right {
+    float: right;
+}
+
+.left {
+    float: left;
+}
+
+.toplinks {
+    margin-top: 25px;
+    margin-right: 150px;
+}
+
+.nav a {
+    padding: 15px 15px;
+    color: #6f6f6f;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+
+.nav a:hover {
+    text-decoration-line: underline;
+    text-decoration-color: red;
+    text-decoration-style: solid;
+}
+
+.logodiv {
+    padding-left: 150px;
+    float: left;
+    height: inherit;
+    display: -webkit-flex;
+}
+
+.logodiv img {
+    width: 70px;
+    height: inherit;
+    float: left;
+}
+
+.logodiv h2 {
+    background-color: #00b0ff;
+    color: #350482;
+}
+
+hr {
+    /*background-color: #ffab02;
+    height: 5px;*/
+    background-color: #fff;
+    border-radius: 10px;
+    margin-left: 30px;
+    margin-right: 30px;
+    padding-bottom: -20px;
+}
+.box{
+    min-width: 300px;
+    max-width: 400px;
+    min-height: 450px;
+    margin: 0 auto;
+    margin-top: 30px;
+
+    background-color: #fff;
+    background-clip: border-box;
+    border: 1px solid rgba(0,0,0,.125);
+    border-radius: .25rem
+}
+.text-field{
+    display: block;
+    width: 100%;
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: .25rem;
+}
+
+.btn-fancy{
+    display: block;
+    width: 50%;
+    height: 50px;
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color: #00b0ff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: .25rem;
+}
+.contentbox1 {
+    width: 100%;
+    position: absolute;
+    transition: 0.3s all ease;
+    left: 61px;
+    top: 0;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+.card {
+    margin-top: 10%;
+    margin-left: 10%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    border-radius: 5px; /* 5px rounded corners */
+    width: 18%;
+    display: inline-block;
+    background-color: #ffd112;
+    border-radius: 10px;
+    padding: 20px;
+    overflow: hidden;
+    cursor: pointer;
+    position: relative;
+    min-height: 234px;
+    margin-bottom: 20px
+}
+
+/* Add rounded corners to the top left and the top right corner of the image */
+img {
+    border-radius: 5px 5px 0 0;
+}
+/* On mouse-over, add a deeper shadow */
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
