@@ -67,6 +67,37 @@ p{
     float: left;
 }
 
+.text-red{
+    color: red;
+}
+
+.sidenav-right {
+    height: 55%;
+    width: 160px;
+    /*position: fixed;*/
+    z-index: 20;
+    background-color: #3c84a5e6;
+    /*overflow-x: hidden;*/
+    padding-top: 25px;
+    float: right;
+}
+
+.sidenav-right a {
+    /*padding: 6px 6px 6px 12px;*/
+    text-decoration: none;
+    font-size: 25px;
+    color: #6f6f6f;
+    display: block;
+    border-radius: 5px 5px 0 0;
+}
+
+.sidenav-right a:hover {
+    cursor: pointer;
+     text-decoration-line: underline;
+    text-decoration-color: red;
+    text-decoration-style: solid;
+}
+
 .toplinks {
     margin-top: 25px;
     margin-right: 150px;
@@ -103,6 +134,7 @@ p{
     background-color: #00b0ff;
     color: #350482;
 }
+
 
 hr {
     /*background-color: #ffab02;
@@ -184,6 +216,39 @@ img {
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 }
 
+/* The grid: Three equal columns that floats next to each other */
+.column {
+    width: 33.33%;
+    padding: 50px;
+    text-align: center;
+    font-size: 25px;
+    cursor: pointer;
+    color: white;
+}
+
+.containerTab {
+    padding-left: 200px;
+    color: white;
+}
+
+.row{
+    float: left;
+    width: 80px;
+}
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: flex;
+    clear: both;
+}
+
+/* Closable button inside the container tab */
+.closebtn {
+    color: white;
+    font-size: 35px;
+    cursor: pointer;
+}
+
 .sidenav {
     height: 55%;
     width: 160px;
@@ -204,6 +269,7 @@ img {
 }
 
 .sidenav a:hover {
+    cursor: pointer;
      text-decoration-line: underline;
     text-decoration-color: red;
     text-decoration-style: solid;

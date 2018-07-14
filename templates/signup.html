@@ -8,6 +8,7 @@
 			<meta name="viewport" content="width=device-width, initial-scale=1.0">
     		<meta http-equiv="X-UA-Compatible" content="ie=edge">
  		   <script src="{{ url_for('static', filename='js/jquery.min.js') }}"></script>
+    	   <script src="{{ url_for('static', filename='js/signup.js') }}"></script>
     
  		    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/styles.css') }}">
     		
@@ -41,10 +42,10 @@
 
 
 			<form method='POST' action="">
-			<input class="text-field" type="text" name="email" placeholder="Email ID"><br>
-  			<input class="text-field" type="text" name="paswd" placeholder="Password"><br>
+			<input class="text-field" type="text" name="email" id= "email" placeholder="Email ID"><br>
+  			<input class="text-field" type="text" name="paswd" id= "password" placeholder="Password"><br>
 			<br>
-			<button class="btn-fancy" type="button">Register</button>  
+			<button class="btn-fancy" type="button" id="auth">Register</button>  
 			<p >Already have any account? Log in</p>
 			<button class="btn-fancy" type="button" onclick="location.href='/login'">Log in</button>  
 		</form>

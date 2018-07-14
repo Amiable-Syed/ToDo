@@ -7,6 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>ToDo List</title>
     <script src="{{ url_for('static', filename='js/jquery.min.js') }}"></script>
+
     <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
     
 </head>
@@ -35,10 +36,10 @@
         <div class="sidenav">
         <!-- Nav -->
             <a href="/Add">Add</a>
-            <a href="">View</a>
+            <a href="/View">View</a>
             <a href="">Edit</a>
             <a href="">Delete</a>
-            <a href="">Delete All</a>
+            <a href="/deleteAll">Delete All</a>
                         
         </div>
 

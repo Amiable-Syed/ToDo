@@ -7,6 +7,8 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>ToDo List</title>
     <script src="{{ url_for('static', filename='js/jquery.min.js') }}"></script>
+     <script src="{{ url_for('static', filename='js/add.js') }}"></script>
+    
     <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
     
 </head>
@@ -35,24 +37,28 @@
         <div class="sidenav">
         <!-- Nav -->
             <a href="/Add">Add</a>
-            <a href="">View</a>
+            <a href="/View">View</a>
             <a href="">Edit</a>
             <a href="">Delete</a>
-            <a href="">Delete All</a>
+            <a href="/deleteAll">Delete All</a>
                         
         </div>
 
         <div align="center" class="box">
             <form>
-                <h5>Add a new Task with title and Description<h5>
-                    <br>
+                <div class="container">   
+                    <h5>Add a new Task with title and Description</h5>
+                    <label class="text-red" id="msg" hidden>You can only add 5 tasks at a time</label>
+                </div>
                 <input class="text-field" type="text" id="title" name="Title" placeholder="Title">
                 <br>
-                <textarea rows="4" cols="50">
+                <textarea rows="4" cols="50" id="description">
                 </textarea>
                 <br><br><br><br>
-            <button class="btn-fancy" type="button" onclick="location.href='/main'">Submit</button>  
+                <button class="btn-fancy" id="save" type="button" >Save</button>  
             </form>
         </div>
     </div>
+
+   
 </body>

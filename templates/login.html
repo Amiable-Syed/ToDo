@@ -9,6 +9,7 @@
     		<meta http-equiv="X-UA-Compatible" content="ie=edge">
  		   <script src="{{ url_for('static', filename='js/jquery.min.js') }}"></script>
     
+    <script src="{{ url_for('static', filename='js/login.js') }}"></script>
  		    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
     		
 		</head>
@@ -38,17 +39,18 @@
 		
 		<div align="center" class="box">
 <img src="{{ url_for('static', filename='images/login.png') }}" width=15% height=15% align="center">
-			<form>
+			<div>
+				<label class="text-red" id="msg" hidden>email or password incorrect</label>
+				<br>
 				<input class="text-field" type="text" id="email" name="email" placeholder="Email ID"><br>
-  			<input class="text-field" type="text" name="paswd" placeholder="Password"><br>
+  			<input class="text-field" type="text" id="password" name="paswd" placeholder="Password"><br>
 			<br>
-			<button class="btn-fancy" type="button" onclick="location.href='/main'" >Log in</button>  
+			<button class="btn-fancy" type="button" id="auth" >Log in</button>  
 			<p >Don't have any account? Sign up</p>
 			<button class="btn-fancy" type="button" onclick="location.href='/signup'">Sign up</button>  
-			</form>
+			</div>
 
 		</div>
-	
 	</body>
 
 	</html>
