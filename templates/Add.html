@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>ToDo List</title>
+    <script src="{{ url_for('static', filename='js/jquery.min.js') }}"></script>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+    
+</head>
+
+<body>
+
+    <div class="container">
+        <!-- nav bar -->
+        <div class="nav">
+            <div class="logodiv">
+                <img src="{{ url_for('static', filename='images/logo.png') }}">
+                <h2>ToDo List&nbsp;</h2>
+            </div>
+
+            <!-- right most links in top navbar -->
+            <div class="right toplinks">
+                <a class="active" href="/home">Home</a>
+                <a href="/about">About us</a>
+                <a href="/contact">Contact</a>
+                 <a href="/signout">Sign out</a>
+            </div>
+
+        </div>
+         <hr>
+
+        <div class="sidenav">
+        <!-- Nav -->
+            <a href="/Add">Add</a>
+            <a href="">View</a>
+            <a href="">Edit</a>
+            <a href="">Delete</a>
+            <a href="">Delete All</a>
+                        
+        </div>
+
+        <div align="center" class="box">
+            <form>
+                <h5>Add a new Task with title and Description<h5>
+                    <br>
+                <input class="text-field" type="text" id="title" name="Title" placeholder="Title">
+                <br>
+                <textarea rows="4" cols="50">
+                </textarea>
+                <br><br><br><br>
+            <button class="btn-fancy" type="button" onclick="location.href='/main'">Submit</button>  
+            </form>
+        </div>
+    </div>
+</body>

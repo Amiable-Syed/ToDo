@@ -7,7 +7,8 @@
 			<!-- <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}"> -->
 			<meta name="viewport" content="width=device-width, initial-scale=1.0">
     		<meta http-equiv="X-UA-Compatible" content="ie=edge">
- 		   
+ 		   <script src="{{ url_for('static', filename='js/jquery.min.js') }}"></script>
+    
  		    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
     		
 		</head>
@@ -41,7 +42,7 @@
 				<input class="text-field" type="text" id="email" name="email" placeholder="Email ID"><br>
   			<input class="text-field" type="text" name="paswd" placeholder="Password"><br>
 			<br>
-			<button class="btn-fancy" type="button">Log in</button>  
+			<button class="btn-fancy" type="button" onclick="location.href='/main'" >Log in</button>  
 			<p >Don't have any account? Sign up</p>
 			<button class="btn-fancy" type="button" onclick="location.href='/signup'">Sign up</button>  
 			</form>

@@ -183,3 +183,28 @@ img {
 .card:hover {
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 }
+
+.sidenav {
+    height: 55%;
+    width: 160px;
+    position: fixed;
+    z-index: 20;
+    background-color: #3c84a5e6;
+    overflow-x: hidden;
+    padding-top: 25px;
+}
+
+.sidenav a {
+    padding: 6px 6px 6px 12px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #6f6f6f;
+    display: block;
+    border-radius: 5px 5px 0 0;
+}
+
+.sidenav a:hover {
+     text-decoration-line: underline;
+    text-decoration-color: red;
+    text-decoration-style: solid;
+}
